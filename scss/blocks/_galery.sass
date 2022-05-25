@@ -1,0 +1,39 @@
+.galery
+  // padding-top: 180px
+  max-width: 1900px
+  margin: 0 auto
+  width: 100%
+  &-item
+    // overflow: hidden
+    opacity: 0.8
+    transition: 0.1s
+    @include inter 
+      opacity: 1
+    &s
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr 1fr
+    & img
+      width: 100%
+      height: 100%
+      object-fit: cover
+// @media (max-width: 1199.98px)
+// @media (max-width: 991.98px) 
+@media (max-width: 767.98px)
+  .galery
+    // padding-top: 110px
+    &-item
+      opacity: 1
+      &s
+        grid-template-columns: 1fr 1fr 1fr
+      & img
+@media (max-width: 576px)
+  .galery
+    // padding-top: 110px
+    &-item
+      &:nth-child(n+9)
+        display: none
+      &s
+        grid-template-columns: 1fr 1fr 
+      & img
+// @media (max-width: 360px)
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="language" content="RU">
+  <meta name="revised" content="09.04.21">
+  <meta http-equiv="Content-Language" content="ru">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="title" content="Глаголка – Благодарность">
+  <meta property="og:image" content="pictures/img/hero/panel.png">
+
+  <link rel="apple-touch-icon" sizes="120x120" href="pictures/favicon_package/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicon_package/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="pictures/favicon_package/favicon-16x16.png">
+  <link rel="manifest" href="pictures/favicon_package/site.webmanifest">
+  <link rel="mask-icon" href="pictures/favicon_package/safari-pinned-tab.svg" color="#2C2E33">
+  <meta name="msapplication-TileColor" content="#2C2E33">
+  <meta name="theme-color" content="#2C2E33">
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>Cообщение отправлено</title>
+</head>
+<body>
+  <style>
+    body {
+      background: #000;
+      display: flex;
+      
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100Vh;
+    }
+    .thanks__title{
+      color: #35FAFD;
+      font-size: 40px;
+      margin-bottom: 5vh;
+      font-weight: normal;
+      text-align: center;
+    }
+    .thanks-btns {
+      display: flex;
+      flex-wrap: wrap ;
+      justify-content: space-between;
+      width: 700px;
+      max-width: 600px;
+    }
+    .main-btn {
+      display: flex;
+      align-items: center;
+      color: #2C2E33;
+      width: 250px;
+      font-weight: bold;
+      text-align: center;
+      background: #35FAFD;
+      color: #2C2E33;
+      font-size: 16px;
+      text-transform: uppercase;
+      padding: 10px 34px;
+      border: 1px solid transparent;
+      font-weight: bold;
+      filter: drop-shadow(0 0 0.15rem #35FAFD);
+  
+}
+    
+    @media  (max-width: 768px){ 
+      .thanks__title{
+        font-size: 30px;
+        margin-bottom: 7vh;
+        width: 90%;
+        text-align: center;
+      }
+      .thanks-btns {
+        width: 450px;
+      }
+      .main-btn {
+        color: #fff;
+        max-width: 200px;
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 4vh;
+      }
+    }
+      @media (max-width: 576px) {
+        .thanks__title {
+          font-size: 24px;
+        }
+        .thanks-btns {
+          display: flex;
+          flex-wrap: wrap ;
+          justify-content: space-between;
+          flex-direction: column;
+          width: auto;
+          margin: 0 auto;
+        }
+        .main-btn {
+          color: #fff;
+          max-width: 250px;
+          font-size: 14px;
+          text-align: center;
+          margin-bottom: 4vh;
+        }
+        
+      }
+  </style>
+  <h1 class="thanks__title">Спасибо за заявку, <br> с вами скоро свяжутся. </h1>
+  <div class="thanks-btns">
+    <a href="#" class="main-btn thanks__goback">Вернуться на сайт</a>
+    <a href="https://www.instagram.com" class="main-btn thanks__goinst">Перейти в инстаграм</a>
+  </div>
+</body>
+</html>

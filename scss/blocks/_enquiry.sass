@@ -1,0 +1,173 @@
+.enquiry
+  display: flex
+  justify-content: space-between
+  padding-top: 190px
+  padding-bottom: 200px
+  position: relative
+  color: #fff
+  background: #35fafda4
+  &-bg
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translate(-50%, 0)
+    width: 100%
+    max-width: 1900px
+    height: 100%
+    z-index: -1
+    object-fit: cover
+  &-blocktext
+    width: 60%
+    padding-right: 2%
+    &__title
+      color: #2C2E33
+  &-form
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    z-index: 100
+    position: relative
+    color: #000
+    width: 40%
+    &-wrapper
+    &__input
+      
+      width: 100%
+      text-transform: capitalize
+      &_wrapper
+        width: 100%
+        padding-top: 20px
+        position: relative
+        &:nth-child(1)
+          padding: 0
+          margin: 0
+      &:nth-child(3)
+        // margin-bottom: 50px
+      &:invalid
+        &::before
+          content: ""
+          position: absolute
+          height: 10px
+          width: 10px
+          background: #000
+          z-index: 11
+          top: 0%
+          right: 30px
+      &:valid 
+    &__btn
+      margin-top: 40px
+      // border: 1px solid #fff
+      // color: #fff
+      
+      
+      &:focus
+        border: 1px solid #fff
+    &__text_agreement
+      margin-bottom: 0
+      & a
+        color: #000
+        // text-decoration: underline
+        
+        font-weight: bold
+        @include inter 
+          filter: drop-shadow(0 0 0.20rem #35FAFD)
+  &-lines
+    bottom: -8%
+    right: -15%
+    transform: rotate(-45deg)
+.radio 
+	display: block
+	height: 25px
+	background-position: 0 -56px
+	coloR: #444
+	cursor: pointer
+	text-indent: 22px
+	font-size: 13px
+
+.radio.active 
+	background-position: 0 -86px
+
+.form-thanks
+  position: absolute
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
+  background: #C3DBDF
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  z-index: 1000000
+  display: none
+@media (max-width: 991.98px)
+  .enquiry
+    flex-direction: column
+    padding-top: 100px
+    padding-bottom: 120px
+    
+    &::after
+      
+      left: 50%
+      bottom:  0%
+      transform: translate(-59%, 25%)
+      height: 300px
+      width: 1100px
+    &-bg
+    &-blocktext
+      width: 100%
+      &__title
+        text-align: center
+        margin-bottom: 30px
+      &__text
+    &-form
+      padding: 0
+      width: 70%
+      margin: 0 auto
+
+      &-wrapper
+        
+      &__input
+        &:focus
+      &__btn
+        margin: 40px auto 0
+        &:hover
+      &__text_agreement
+        text-align: center
+    &-lines
+  .radio 
+  .radio.active 
+
+@media (max-width: 575.98px)
+  .enquiry
+    padding-top: 100px
+    padding-bottom: 100px
+    &::after
+    &-bg
+    &-blocktext
+      
+      &__text
+        margin-top: 5px
+        margin-bottom: 35px
+        font-size: 18px
+        line-height: 130%
+    &-form
+      padding: 0 10px
+      width: 100%
+      &-wrapper
+        width: 100%
+      &__input
+        
+        &:focus
+      &__btn
+        width: 100%
+        // margin-top: 0px
+        &:hover
+      &__text_agreement
+        text-align: left
+
+    &-lines
+
+  .radio 
+  .radio.active 
+
+// @media (max-width: 767.98px)

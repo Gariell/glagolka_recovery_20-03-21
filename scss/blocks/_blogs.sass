@@ -1,0 +1,46 @@
+.blogs
+  padding-top: 170px
+  &__title
+    text-align: center
+    margin-bottom: 30px
+  &-slide   
+    @include inter 
+      & img 
+        opacity: 1
+    &__img
+      overflow: hidden
+      & img 
+        transition: 0.1s
+        opacity: 0.8
+        width: 100%
+    &s
+    &__title
+      margin: 15px 0 5px
+      font-size: 18px
+      font-weight: 700
+      text-transform: uppercase
+
+    &__profession
+      &:first-letter
+        text-transform: uppercase
+
+// @media (max-width: 1199.98px)
+@media (max-width: 991.98px) 
+  .blogs
+    padding-top: 100px
+@media (max-width: 767.98px)
+  .blog
+    padding-top: 100px
+    &__title
+    &-slide
+      &__img
+        
+        & img 
+          width: 100%
+      &s
+      &__title
+      &__profession
+// @media (max-width: 576px)
+@media (max-width: 360px)
+  .blog
+    padding-top: 80px

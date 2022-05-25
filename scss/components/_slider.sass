@@ -1,0 +1,150 @@
+.swiper
+  &-container
+    
+  &-wrapper
+    padding-bottom: 40px
+  &-controls
+  &-navigations
+    display: flex
+  &-button
+
+.slider
+  &-container
+    
+  &-controls
+    
+  &-navigations
+    display: flex
+    justify-content: center
+    width: auto
+    
+  &-prev
+    margin-right: 20px
+    border-radius: 50%
+    transition: 0.1s
+    filter: drop-shadow(0 0 0.20rem $main-color)
+    -moz-user-select: none
+    -khtml-user-select: none
+    user-select: none
+    cursor: pointer
+    @include inter 
+      filter: drop-shadow(0 0 0.30rem #35FAFD)
+    &:focus
+      outline: none
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    &::after
+      display: none
+      
+  &-next
+    cursor: pointer
+    margin-left: 20px
+    border-radius: 50%
+    transition: 0.1s
+    filter: drop-shadow(0 0 0.20rem $main-color)
+    -moz-user-select: none
+    -khtml-user-select: none
+    user-select: none
+    @include inter 
+      filter: drop-shadow(0 0 0.30rem #35FAFD)
+    &::after
+      display: none
+    &:focus
+      outline: none
+      filter: drop-shadow(0 0 0.40rem #35FAFD)
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+
+// @media (max-width: 1199.98px)
+
+// @media (max-width: 991.98px)
+  
+@media (max-width: 767.98px)
+  .swiper
+    &-container
+      padding-bottom: 20px
+    &-wrapper
+    &-button
+      &-prev
+        &::after
+      &-next
+        &::after
+    &-slide
+  .slider
+    &-bullet
+      background: #000000
+      // height: 10px
+      min-height: 10px
+      max-height: 10px
+      // width: 35px
+      max-width: 20px
+      min-width: 20px
+      border-radius: 5px
+      margin: 0 5px
+      transition: 0.3s
+      cursor: pointer
+      &s 
+        height: 10px !important
+        width: 100px !important
+        bottom: 20px !important
+        display: flex
+        justify-content: center
+        left: 50% !important
+        transform: translate(-50%, 0)
+      &_active
+        max-width: 14px
+        min-width: 14px
+        max-height: 14px
+        min-height: 14px
+        border-radius: 50%
+        // background: $main-color
+        margin-top: -2px
+  .slider
+    &-controls
+    &-navigations
+    &-prev
+      height: 50px
+      width: 50px
+      & img 
+        height: 100%
+      &::after
+    &-next
+      height: 50px
+      width: 50px
+      & img 
+        height: 100%
+      &::after
+
+@media (max-width: 575.98px)
+  .swiper
+    &-container
+      padding-bottom: 10px
+// @media (max-width: 480px)
+
+@media (max-width: 380px)
+  .swiper
+    &-container
+    &-wrapper
+    &-button
+      // &-prev
+      //   height: 30px !important
+      //   width: 30px !important
+      //   bottom: 10px !important 
+      //   transform: translate(calc( -50% - 100px)) !important
+      //   &::after
+      // &-next
+      //   height: 30px !important
+      //   width: 30px !important
+      //   bottom: 10px !important 
+      //   transform: translate(calc( 50% + 100px)) !important
+        &::after
+    &-slide
+  .slider
+    &-bullet
+      min-height: 7px
+      max-height: 7px
+      &s 
+      &_active
+        min-height: 10px
+        max-height: 10px
+        min-width: 10px
+        max-width: 10px

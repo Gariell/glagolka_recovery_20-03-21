@@ -1,0 +1,188 @@
+.stages
+  padding-top: 130px
+  // padding-bottom: 20px
+  &-decoration
+    right: 0
+    top: -270px
+    position: absolute
+    width: 230px
+    height: 230px
+    animation: 10s linear 0s normal none infinite running rot
+    -webkit-animation: 15s linear 0s normal none infinite running rot
+    filter: drop-shadow(0 0 0.2rem $main-color)
+    z-index: -1
+  &__title
+    text-align: center
+    margin-bottom: 40px
+  &-item
+    width: 31%
+    position: relative
+    padding-right: 100px
+    &:nth-child(3)
+      &::after
+        display: none
+
+      
+    &s 
+      position: relative
+      display: flex
+      justify-content: space-between
+    
+    &__title
+      
+      
+      position: relative
+      font-size: 18px
+      text-transform: uppercase
+      font-weight: 700
+      & span
+        position: relative
+        
+        &::after
+          content: ""
+          position: absolute
+          top: 2px
+          left: -22px
+          width: 13px
+          height: 13px
+          border: 1px solid $main-color
+          border-radius: 50%
+          filter: drop-shadow(0 0 0.2rem $main-color)
+    &__text
+    &::after
+      content: ""
+      width: 70px
+      height: 13px 
+      position: absolute
+      top: 2px
+      right: 20px
+      background: url('../pictures/img/stages/arrow.svg') center no-repeat
+      
+  &__btn
+    margin: 15px auto 0
+    display: block
+    font-size: 14px
+    text-align: center
+    padding: 15px
+  .stages
+    &-decoration
+    &__title
+    &-item
+      &:nth-child(3)
+        &::after
+        
+      &s 
+      &__title
+        &::after
+      &__text
+      &::after
+    &__btn
+// @media (max-width: 1199.98px)
+@media (max-width: 991.98px) 
+  .stages
+    padding-top: 100px
+    &-decoration
+      height: 150px
+      width: 150px
+      top: -200px
+      right: -50px
+      & img 
+        height: 100%
+    &__title
+    &-item
+      &:nth-child(3)
+        padding-bottom: 0
+        &::after
+      width: 80%
+      text-align: center
+      padding: 0
+      margin: 0 auto
+      padding-bottom: 100px
+      &s 
+        flex-direction: column
+        
+      &__title
+        display: inline-block
+        width: auto
+        &::after
+          top: 3px
+      &__text
+      &::after
+        top: auto
+        transform:  translate(-50%, -0%) rotate(90deg)
+        left: 50%
+        right: auto
+        bottom: 50px
+    &__btn
+@media (max-width: 767.98px)
+  .stages
+    
+    &-decoration
+      height: 150px
+      width: 150px
+      top: -200px
+      right: -50px
+      & img 
+        height: 100%
+    &__title
+    &-item
+      &:nth-child(3)
+        padding-bottom: 0
+        &::after
+      width: 80%
+      text-align: center
+      padding: 0
+      margin: 0 auto
+      padding-bottom: 100px
+      &s 
+        flex-direction: column
+        
+      &__title
+        display: inline-block
+        width: auto
+        &::after
+      &__text
+      &::after
+        top: auto
+        transform:  translate(-50%, -0%) rotate(90deg)
+        left: 50%
+        right: auto
+        bottom: 50px
+    &__btn
+@media (max-width: 576px)
+  .stages
+    &-decoration
+      top: -170px
+      
+    &__title
+    &-item
+      margin: 0 auto
+      &:nth-child(3)
+        &::after
+        
+      &s 
+      &__title
+        &::after
+      &__text
+      &::after
+    &__btn
+@media (max-width: 360px)
+  .stages
+    &-decoration
+      height: 100px
+      width: 100px
+      top: -150px
+    &__title
+    &-item
+      &:nth-child(3)
+        &::after
+        
+      &s 
+      &__title
+        padding: 0
+        & span::after
+          display: none
+      &__text
+      &::after
+    &__btn
+    

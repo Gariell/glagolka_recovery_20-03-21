@@ -1,0 +1,123 @@
+.reviews
+  padding-top: 180px
+  
+  &__title
+    margin-bottom: 25px
+  &-slider
+    height: auto
+    padding-bottom: 15px
+    padding-top: 10px
+    padding-left: 10px
+    margin-left: -10px
+    position: relative
+    overflow: visible
+    clip-path: inset( -100vw -100vw -100vw  0  )
+    width: 100%
+    &-slide
+      padding: 35px 40px
+      border: 1px solid #35fafdb1
+      box-shadow: 0 0 0.20rem $main-color
+      // filter: drop-shadow(0 0 0.20rem $main-color)
+      // height: 100% !important
+      height: auto
+      width: 60%
+      // &.swiper-slide_first
+      //   width: 60%
+      
+        
+    &__title
+      font-weight: bold
+      font-size: 20px
+      
+    &__text
+      line-height: 22.4px
+      // height: 100%
+    &__image
+      display: block
+      align-items: end
+@media (max-width: 991.98px)
+  .reviews
+    padding-top: 100px
+    &__title
+    &-slider
+      overflow: hidden
+      &::after
+      &-slide
+        height: auto
+        // height: 100%
+        width: 100% !important
+        &::after
+        &::before
+      &__title
+      &__text
+        height: auto
+        &:hover svg path
+      &-next
+        &:hover svg path
+@media (max-width: 767.98px)
+  .reviews
+    
+    &__title
+    &-slider
+      &::after
+        display: none
+      &-slide
+        &::after
+        &::before
+      &__title
+      &__text
+        &:hover svg path
+      &-next
+        &:hover svg path\
+        
+@media (max-width: 575.98px)
+  .reviews
+    padding-top: 100px
+    &__title
+    &-slider
+      padding: 10px
+      width: calc( 100% + 20px )
+      margin-left: -10px
+      // padding-top: 89px
+      &::after
+      &-slide
+        box-shadow: 0
+        padding: 15px 15px
+        &::after
+        &::before
+      &__title
+      &__text
+        &:hover svg path
+      &-next
+        &:hover svg path
+@media (max-width: 480px)
+  .reviews
+    &__title
+    &-slider
+      &::after
+      &-slide
+        height: auto
+        &::after
+        &::before
+      &__title
+      &__text
+        line-height: normal
+        &:hover svg path
+      &-next
+        &:hover svg path
+@media (max-width: 400px)
+  .reviews
+    
+    &__title
+    &-slider
+      &::after
+      &-slide
+        
+        &::after
+        &::before
+      &__title
+      &__text
+        font-size: 14px
+        &:hover svg path
+      &-next
+        &:hover svg path

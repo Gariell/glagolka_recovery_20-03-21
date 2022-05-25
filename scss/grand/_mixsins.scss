@@ -1,0 +1,7 @@
+@mixin inter {
+  @media(hover: hover) and (pointer: fine) {
+    &:hover {
+      @content;
+    };
+  };
+};

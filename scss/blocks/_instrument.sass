@@ -1,0 +1,100 @@
+.instrument
+  padding-top: 180px
+  padding-bottom: 170px
+  &__title
+    font-size: 60px
+    letter-spacing: 0.02em
+    & span 
+      text-stroke: 1px $main-color
+      -webkit-text-stroke: 1px $main-color
+      color: transparent
+  &-bg 
+    display: flex
+    align-items: flex-end
+    justify-content: flex-end
+    margin-top: -20px
+    &__img
+      & img 
+        height: 100%
+      &:nth-child(1)
+        height: 200px
+        margin-right: 10%
+        z-index: -1
+        // padding-bottom: 40px
+        margin-bottom: 30px
+      &:nth-child(2)
+        z-index: -1
+        height: 300px
+// @media (max-width: 1199.98px)
+@media (max-width: 991.98px) 
+  .instrument
+    padding-top: 110px
+    padding-bottom: 110px
+    &__title
+      font-size: 40px
+      & span 
+    &-bg 
+      &__img
+        & img 
+        &:nth-child(1)
+        &:nth-child(2)
+@media (max-width: 767.98px)
+  .instrument
+    
+    &__title
+      font-size: 25px !important
+      & span 
+    &-bg 
+      width: 100%
+      margin-top: 10px
+      align-items: center
+      justify-content: space-between
+      &__img
+        
+        & img 
+          width: 100%
+          object-fit: cover
+        &:nth-child(1)
+          margin: 0
+          width: 45%
+          height: auto
+          margin-left: 0%
+        &:nth-child(2)
+          margin: 0
+          width: 45%
+          height: auto
+          
+@media (max-width: 576px)
+  .instrument
+    padding-top: 100px
+    padding-bottom: 100px
+    &__title
+      text-align: center
+      font-size: 22px
+      & span 
+    &-bg 
+      // align-items: flex-start
+      padding-top: 0px
+      &__img
+        & img 
+        &:nth-child(1)
+          width: 45%
+          
+        &:nth-child(2)
+          width: 50%
+@media (max-width: 360px)
+  .instrument
+    &__title
+      margin-bottom: 30px
+      & span 
+    &-bg 
+      align-items: flex-end
+      &__img
+        
+        & img 
+        &:nth-child(1)
+          width: 55%
+          margin: 0 -30px -20px 0
+
+        &:nth-child(2)
+          width: 70%
